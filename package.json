@@ -1,0 +1,33 @@
+{
+  "name": "gst_app",
+  "version": "1.0.0",
+  "description": "using express and mongodb",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/My-Github-NehaYadav/GST_APP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/My-Github-NehaYadav/GST_APP/issues"
+  },
+  "homepage": "https://github.com/My-Github-NehaYadav/GST_APP#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "config": "^3.3.9",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-pino-logger": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.0",
+    "nodemon": "^2.0.21",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.2"
+  }
+}
