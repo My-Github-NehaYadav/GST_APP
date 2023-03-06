@@ -1,0 +1,62 @@
+{
+  "definition": {
+    "openapi": "3.0.3", 
+    "info": {
+      "title": "Simple GST Billing API",
+      "description": "A simple GST Billing API",
+      "version": "1.0.0",
+      "contact": {
+        "url": "example.com"
+      }
+    },
+    "servers": [
+        {
+          "url": "http://localhost:8000",
+          "description": "Local server"
+        }
+    ],
+    "tags": [
+        {
+            "name": "Users APIs"
+        },
+        {
+          "name": "GST Billing APIs"
+        }
+    ],
+    "components": {
+        "schemas": {
+            "signup": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "email for signup",
+                        "require": true
+                    },
+                    "password": {
+                        "type": "string",
+                        "description": "password for signup",
+                        "require": true
+                    }
+                }
+            },
+            "Error": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string",
+                    "description": "Error message", 
+                    "example": "Not found"
+                  },
+                  "code": {
+                    "type": "string",
+                    "description": "Error internal code", 
+                    "example": "Invalid parameters"
+                  }
+                }
+            }
+        }
+    }
+  },
+  "apis": ["../routes/routes.js", "../model/user.schema.js"]
+}
